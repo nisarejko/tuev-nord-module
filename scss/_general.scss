@@ -1,12 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./colors";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: #fff;
+  color: $dark-blue;
+}
+
+main {
+  &.content {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+  }
+}
+
+section {
+  &.container {
+    margin-left: 20rem;
+  }
+}
+
+div {
+  &.max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5rem 6.75rem;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+nav {
+  &.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    background: $mid-grey;
+    border-right: 1px solid $grey;
+    width: 20rem;
+    height: 100%;
+  }
+  ul {
+    list-style-type: none;
+  }
 }

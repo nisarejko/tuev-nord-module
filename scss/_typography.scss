@@ -1,3 +1,44 @@
-h2 {
-    color: $electric-blue;
+@font-face {
+  font-family: tng-pro;
+  src: url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.eot?#iefix");
+  src: url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.eot?#iefix")
+      format("eot"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.woff2")
+      format("woff2"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.woff")
+      format("woff"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.ttf")
+      format("truetype"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_regular-webfont.svg#tng_pro_regular-webfont")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: tng-pro;
+  src: url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.eot?#iefix");
+  src: url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.eot?#iefix")
+      format("eot"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.woff2")
+      format("woff2"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.woff")
+      format("woff"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.ttf")
+      format("truetype"),
+    url("https://www.tuev-nord-group.com/Resources/Public/fonts/TNG_PRO_WEBFONTS_EDITION_SH3/tng_pro_medium-webfont.svg#tng_pro_medium-webfont")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.headline-xs {
+  font-family: tng-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.5px;
+  line-height: 1.3;
+  letter-spacing: 0.0025em;
 }
