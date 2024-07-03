@@ -1,0 +1,9 @@
+.e-akzent {
+  height: 4px;
+  background: currentColor;
+
+  transition: width 0.5s ease;
+  &-m {
+    width: 30%;
+  }
+}

@@ -1,7 +1,19 @@
+@import "./colors";
+
 .col-12 {
-    grid-column: span 12;
+  grid-column: span 12;
 }
 
 .col-6 {
-    grid-column: span 6;
+  grid-column: span 6;
+}
+
+.u-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-fuchsia {
+  background: $fuchsia;
 }
