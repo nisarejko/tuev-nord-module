@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "./colors";
 
 /**
@@ -57,13 +56,40 @@ button,
 }
 
 html {
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-family: tng-pro, sans-serif;
 }
 
 body {
   background: #fff;
   color: $dark-blue;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  &.header {
+    padding: 0 1.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: $dark-blue;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: $greyish;
+        transition: color 0.4s ease;
+      }
+    }
+  }
 }
 
 main {
@@ -76,7 +102,7 @@ main {
 
 section {
   &.container {
-    margin-left: 20rem;
+    margin-left: 12rem;
   }
 }
 
@@ -84,8 +110,7 @@ div {
   &.max-width {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 5rem 6.75rem;
-
+    padding: 5rem 4.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
@@ -95,12 +120,12 @@ div {
 nav {
   &.nav {
     position: fixed;
-    top: 0;
+    top: 2.5rem;
     left: 0;
     padding: 1.5rem;
     background: $mid-grey;
     border-right: 1px solid $grey;
-    width: 20rem;
+    width: 12rem;
     height: 100%;
   }
   ul {
